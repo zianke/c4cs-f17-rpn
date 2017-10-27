@@ -1,6 +1,3 @@
-import numbers
-
-
 def calculate(arg):
     stack = list()
     for x in arg:
