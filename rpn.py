@@ -2,13 +2,14 @@
 
 import operator
 
-
 operators = {
     '+': operator.add,
     '-': operator.sub,
     '*': operator.mul,
     '/': operator.truediv,
+    '^': operator.pow
 }
+
 
 def calculate(myarg):
     stack = list()
@@ -27,10 +28,12 @@ def calculate(myarg):
         raise TypeError("Too many parameters")
     return stack.pop()
 
+
 def main():
     while True:
         result = calculate(input("rpn calc> "))
         print("Result: ", result)
+
 
 if __name__ == '__main__':
     main()
