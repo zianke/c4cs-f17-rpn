@@ -2,7 +2,7 @@
 
 import operator
 import readline
-from colored import fg,bg,attr
+from colored import fg, bg, attr
 
 operators = {
     '+': operator.add,
@@ -25,7 +25,7 @@ def calculate(myarg):
             arg1 = stack.pop()
             result = function(arg1, arg2)
             stack.append(result)
-        print(stack)
+        print("%s%s %s %s" % (fg(1), bg(15), stack, attr(0)))
     if len(stack) != 1:
         raise TypeError("Too many parameters")
     return stack.pop()
@@ -34,7 +34,7 @@ def calculate(myarg):
 def main():
     while True:
         result = calculate(input("rpn calc> "))
-        print("Result: %s%s %s %s" % (fg(1),bg(15),result,attr(0)))
+        print("Result: ", result)
 
 
 if __name__ == '__main__':
