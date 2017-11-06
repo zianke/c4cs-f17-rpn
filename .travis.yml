@@ -1,12 +1,13 @@
-  language: python
-  python:
-    - 3.6
-  install:
-    - pip install pytest pytest-cov
-    - pip install coveralls
-    - pip install readline
-    - pip install colored
-  script:
-    - py.test
-  after_success:
-    - coveralls
+language: python
+python:
+  - "3.5"
+# command to run tests
+before_script:
+  - pip install python-coveralls
+  - pip install coverage
+  - pip install readline
+  - pip install colored
+script:
+  - coverage run -m unittest test_rpn
+after_success:
+  - coveralls
