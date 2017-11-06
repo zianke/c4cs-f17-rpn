@@ -20,6 +20,8 @@ def calculate(myarg):
             token = int(token)
             stack.append(token)
         except ValueError:
+            if not token in operators.keys():
+                return "Invalid operator"
             function = operators[token]
             arg2 = stack.pop()
             arg1 = stack.pop()
