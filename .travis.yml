@@ -7,6 +7,6 @@
     - pip install readline
     - pip install colored
   script:
-    - pytest
+    - py.test
   after_success:
     - coveralls

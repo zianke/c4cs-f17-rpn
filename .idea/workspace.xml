@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6ad2c21-ab3e-4fdd-9890-1318a533215a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.coveralls.yml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="007.rpn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -423,7 +423,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="952" y="0" width="976" height="1076" extended-state="1" />
+    <frame x="952" y="0" width="976" height="1076" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3924612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
