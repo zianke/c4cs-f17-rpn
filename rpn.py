@@ -2,7 +2,6 @@
 
 import operator
 import readline
-from colored import fg, bg, attr
 
 operators = {
     '+': operator.add,
@@ -27,7 +26,7 @@ def calculate(myarg):
             arg1 = stack.pop()
             result = function(arg1, arg2)
             stack.append(result)
-        print("%s%s %s %s" % (fg(1), bg(15), stack, attr(0)))
+        print(stack)
     if len(stack) != 1:
         return "Too many parameters"
     return stack.pop()
