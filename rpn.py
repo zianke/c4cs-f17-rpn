@@ -11,7 +11,6 @@ operators = {
     '^': operator.pow
 }
 
-
 def calculate(myarg):
     stack = list()
     for token in myarg.split():
@@ -31,12 +30,10 @@ def calculate(myarg):
         return "Too many parameters"
     return stack.pop()
 
-
 def main():
     while True:
         result = calculate(input("rpn calc> "))
         print("Result: ", result)
-
 
 if __name__ == '__main__':
     main()
